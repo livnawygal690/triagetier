@@ -1,0 +1,12 @@
+name: ablation_no_qa
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  use_qa: false
+expected:
+  ratic_mean_organ_auc: 0.782
+  ratic_delta: -1.0
+  cq500_ich_auc: 0.843
+  mimic_esi_match: 73.5
+  mimic_delta: -0.7

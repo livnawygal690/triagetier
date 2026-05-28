@@ -1,0 +1,14 @@
+name: supplementary_edge_qwen3b_int4
+model: qwen25vl3b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  backbone: qwen2.5-vl-3b
+  precision: int4
+expected:
+  hardware: Jetson Orin Nano 8GB
+  vram_gb: 2.6
+  latency_s_per_case: 52.4
+  ratic_mean_organ_auc: 0.741
+  mimic_esi_match: 69.8
+  note: minimum viable deployment configuration

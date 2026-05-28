@@ -1,0 +1,5 @@
+kind: llava-med
+model_id: microsoft/llava-med-v1.5-mistral-7b
+precision: fp16
+params_billions: 7
+omnimedvqa: 28.78

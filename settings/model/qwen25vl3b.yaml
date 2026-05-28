@@ -1,0 +1,5 @@
+kind: qwen2.5-vl
+model_id: Qwen/Qwen2.5-VL-3B-Instruct
+precision: fp16
+params_billions: 3
+nejm_image_challenge: 35.6

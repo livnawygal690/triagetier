@@ -1,0 +1,5 @@
+kind: cq500
+root: data/raw/cq500
+n_scans: 491
+n_slices: 193317
+source: http://headctstudy.qure.ai/

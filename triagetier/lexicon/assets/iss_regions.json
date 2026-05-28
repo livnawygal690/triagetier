@@ -1,0 +1,20 @@
+{
+  "schema": "iss-body-regions-baker-1974",
+  "regions": ["head_neck", "face", "thorax", "abdomen", "extremities", "external"],
+  "imaged_by": {"abdomen": "RATIC", "head_neck": "CQ500"},
+  "finding_to_region": {
+    "liver": "abdomen",
+    "spleen": "abdomen",
+    "kidney": "abdomen",
+    "bowel": "abdomen",
+    "extravasation": "abdomen",
+    "intraparenchymal": "head_neck",
+    "intraventricular": "head_neck",
+    "subdural": "head_neck",
+    "extradural": "head_neck",
+    "subarachnoid": "head_neck",
+    "calvarial_fracture": "head_neck",
+    "midline_shift": "head_neck",
+    "mass_effect": "head_neck"
+  }
+}

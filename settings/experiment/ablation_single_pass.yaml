@@ -1,0 +1,10 @@
+name: ablation_single_pass
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  single_pass: true
+expected:
+  ratic_mean_organ_auc: 0.642
+  ratic_delta: -15.0
+  cq500_ich_auc: 0.698

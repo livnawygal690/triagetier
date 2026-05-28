@@ -1,0 +1,9 @@
+name: slice_max_entropy
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  slice_strategy: max_entropy
+expected:
+  ratic_mean_organ_auc: 0.731
+  note: recovers 40 percent of the random-to-landmark gap

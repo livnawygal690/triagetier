@@ -1,0 +1,21 @@
+{
+  "schema": "esi-v4-2012",
+  "levels": {
+    "1": "immediate life-saving intervention required",
+    "2": "high-risk situation; severe pain or distress; dangerous vitals",
+    "3": "predicted to require two or more resources",
+    "4": "predicted to require one resource",
+    "5": "predicted to require no resources"
+  },
+  "decision": {
+    "lifesaving_min_ais": 5,
+    "high_risk_min_ais": 4,
+    "high_risk_min_iss": 16,
+    "multi_resource_min_iss": 5,
+    "single_resource_min_iss": 1
+  },
+  "physiology": {
+    "shock_systolic_bp": 90.0,
+    "tachycardia_hr": 110.0
+  }
+}

@@ -1,0 +1,17 @@
+name: cq500
+model: qwen25vl7b
+data: cq500
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  backbone: qwen2.5-vl-7b
+  precision: fp16
+expected:
+  ich_auc: 0.856
+  ich_std: 0.028
+  intraparenchymal_auc: 0.882
+  intraventricular_auc: 0.873
+  extradural_auc: 0.868
+  subdural_auc: 0.841
+  subarachnoid_auc: 0.812
+  calvarial_fracture_auc: 0.824
+  supervised_gap_pp: -8.4

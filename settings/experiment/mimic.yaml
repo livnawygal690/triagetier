@@ -1,0 +1,15 @@
+name: mimic
+model: qwen25vl7b
+data: mimic_iv_ed
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  backbone: qwen2.5-vl-7b
+  precision: fp16
+expected:
+  esi_match: 74.2
+  esi_std: 2.4
+  within_one: 89.1
+  off_by_two: 3.2
+  cohen_kappa: 0.618
+  best_text_baseline: 66.4
+  improvement_pp: 7.8

@@ -1,0 +1,14 @@
+backbone: qwen2.5-vl-7b
+precision: fp16
+use_knowledge_graph: true
+use_slice_selection: true
+use_qa: true
+multi_window: true
+single_pass: false
+slice_strategy: landmark
+k_solid: 7
+k_bowel: 10
+jitter_fraction: 0.15
+max_qa_iter: 3
+confidence_threshold: 0.3
+control: none

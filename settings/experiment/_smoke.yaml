@@ -1,0 +1,9 @@
+# for unit-test smoke only; do not use for reporting
+name: _smoke
+model: mock
+data: synthetic
+seeds: [0]
+pipeline:
+  backbone: mock
+  precision: fp16
+  jitter_fraction: 0.0

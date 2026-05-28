@@ -1,0 +1,12 @@
+name: supplementary_edge_qwen7b_int8
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  precision: int8
+expected:
+  hardware: A100
+  vram_gb: 8.1
+  latency_s_per_case: 6.7
+  ratic_mean_organ_auc: 0.788
+  mimic_esi_match: 73.8

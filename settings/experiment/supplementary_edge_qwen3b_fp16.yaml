@@ -1,0 +1,13 @@
+name: supplementary_edge_qwen3b_fp16
+model: qwen25vl3b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  backbone: qwen2.5-vl-3b
+  precision: fp16
+expected:
+  hardware: A100
+  vram_gb: 6.4
+  latency_s_per_case: 4.1
+  ratic_mean_organ_auc: 0.756
+  mimic_esi_match: 71.3

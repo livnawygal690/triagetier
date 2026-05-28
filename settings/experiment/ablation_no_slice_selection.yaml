@@ -1,0 +1,11 @@
+name: ablation_no_slice_selection
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  use_slice_selection: false
+  slice_strategy: random
+expected:
+  ratic_mean_organ_auc: 0.723
+  ratic_delta: -6.9
+  cq500_ich_auc: 0.803

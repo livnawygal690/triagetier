@@ -1,0 +1,11 @@
+name: ablation_random_input
+model: mock
+data: synthetic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  control: random
+expected:
+  ratic_mean_organ_auc: 0.512
+  ratic_delta: -28.0
+  cq500_ich_auc: 0.523
+  mimic_esi_match: 52.1

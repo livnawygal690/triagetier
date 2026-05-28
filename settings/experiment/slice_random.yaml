@@ -1,0 +1,10 @@
+name: slice_random
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  slice_strategy: random
+  use_slice_selection: false
+expected:
+  ratic_mean_organ_auc: 0.690
+  note: random-to-landmark gap is 10.2 pp

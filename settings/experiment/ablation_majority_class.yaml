@@ -1,0 +1,10 @@
+name: ablation_majority_class
+model: mock
+data: synthetic
+seeds: [0]
+pipeline:
+  control: majority
+expected:
+  ratic_mean_organ_auc: 0.500
+  cq500_ich_auc: 0.500
+  mimic_esi_match: 38.4

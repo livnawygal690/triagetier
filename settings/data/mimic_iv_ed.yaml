@@ -1,0 +1,6 @@
+kind: mimic_iv_ed
+root: data/raw/mimic-iv-ed
+n: 2000
+version: "2.2"
+source: https://physionet.org/content/mimic-iv-ed/2.2/
+esi_distribution: {esi1: 0.042, esi2: 0.231, esi3: 0.428, esi4: 0.225, esi5: 0.074}

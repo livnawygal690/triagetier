@@ -1,0 +1,7 @@
+kind: ratic
+root: data/raw/ratic
+split: test
+n_test: 874
+institutions: 23
+countries: 14
+source: https://www.kaggle.com/competitions/rsna-2023-abdominal-trauma-detection

@@ -1,0 +1,14 @@
+name: supplementary_edge_internvl8b_int4
+model: internvl25_8b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  backbone: internvl2.5-8b
+  precision: int4
+expected:
+  hardware: Jetson AGX Orin 8GB
+  vram_gb: 5.2
+  latency_s_per_case: 42.7
+  ratic_mean_organ_auc: 0.762
+  mimic_esi_match: 71.1
+  note: cross-architecture validation

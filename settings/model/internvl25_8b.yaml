@@ -1,0 +1,5 @@
+kind: internvl2.5
+model_id: OpenGVLab/InternVL2_5-8B
+precision: int4
+params_billions: 8
+nejm_image_challenge: 35.0

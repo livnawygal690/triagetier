@@ -1,0 +1,9 @@
+name: slice_landmark
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  slice_strategy: landmark
+expected:
+  ratic_mean_organ_auc: 0.792
+  knowledge_prompt_gain_pp: 5.4

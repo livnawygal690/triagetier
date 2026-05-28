@@ -1,0 +1,13 @@
+name: supplementary_edge_qwen7b_int4
+model: qwen25vl7b
+data: ratic
+seeds: [0, 1, 2, 3, 4]
+pipeline:
+  precision: int4
+expected:
+  hardware: Jetson AGX Orin 8GB
+  vram_gb: 4.8
+  latency_s_per_case: 38.2
+  ratic_mean_organ_auc: 0.779
+  mimic_esi_match: 72.6
+  note: accuracy-optimal edge configuration; 1.1 percent of the 60-minute golden hour
